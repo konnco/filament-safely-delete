@@ -20,7 +20,6 @@ trait HasFieldConfirmation
 
     public function getDeleteRecordConfirmationTypingText(): string
     {
-        return $this->getRecord()
-            ->{$this->getUsingField()};
+        return $this->getRecord()?->{$this->getUsingField()} ?? "";
     }
 }

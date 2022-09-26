@@ -4,7 +4,7 @@
     "keywords": [
         "import",
         "laravel",
-        "filament-import"
+        "filament-safely-delete"
     ],
     "autoload": {
         "psr-4": {

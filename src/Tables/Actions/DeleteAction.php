@@ -17,22 +17,22 @@ class DeleteAction extends \Filament\Tables\Actions\DeleteAction
 
         $this->form([
             TextInput::make('name')
-                ->label(trans('filament-safely-delete::actions.input-label', []))
+                ->label(fn()=>trans('filament-safely-delete::actions.input_label', ['name'=>$this->getDeleteRecordConfirmationTypingText()]))
                 ->rules([
                     function () {
                         return function (string $attribute, $value, Closure $fail) {
                             if ($value !== $this->getDeleteRecordConfirmationTypingText()) {
-                                $fail("The {$attribute} is must equal with ".$this->getDeleteRecordConfirmationTypingText());
+                                $fail(trans("filament-safely-delete::actions.validation", ['name'=>$this->getDeleteRecordConfirmationTypingText()]));
                             }
                         };
                     },
                 ])
-                ->required(),
+                ->required()
         ]);
 
         $this->action(function (array $data, Model $record): void {
             if ($data['name'] === $this->getDeleteRecordConfirmationTypingText()) {
-                $this->process(static fn (Model $record) => $record->delete());
+                $this->process(static fn(Model $record) => $record->delete());
                 $this->success();
             }
         });
