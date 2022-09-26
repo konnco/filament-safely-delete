@@ -22,17 +22,17 @@ class DeleteAction extends \Filament\Tables\Actions\DeleteAction
                     function () {
                         return function (string $attribute, $value, Closure $fail) {
                             if ($value !== $this->getDeleteRecordConfirmationTypingText()) {
-                                $fail("The {$attribute} is must equal with " . $this->getDeleteRecordConfirmationTypingText());
+                                $fail("The {$attribute} is must equal with ".$this->getDeleteRecordConfirmationTypingText());
                             }
                         };
                     },
                 ])
-                ->required()
+                ->required(),
         ]);
 
         $this->action(function (array $data, Model $record): void {
             if ($data['name'] === $this->getDeleteRecordConfirmationTypingText()) {
-                $this->process(static fn(Model $record) => $record->delete());
+                $this->process(static fn (Model $record) => $record->delete());
                 $this->success();
             }
         });

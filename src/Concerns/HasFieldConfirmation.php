@@ -4,11 +4,12 @@ namespace Konnco\FilamentSafelyDelete\Concerns;
 
 trait HasFieldConfirmation
 {
-    protected string $usingField = "name";
+    protected string $usingField = 'name';
 
     public function usingField($usingField): static
     {
         $this->usingField = $usingField;
+
         return $this;
     }
 

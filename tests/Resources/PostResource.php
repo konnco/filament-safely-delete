@@ -15,7 +15,6 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
-
     public static function form(Form $form): Form
     {
         return $form
@@ -50,7 +49,7 @@ class PostResource extends Resource
             ->actions([
                 Tables\Actions\EditAction::make(),
                 DeleteAction::make()
-                    ->usingField('title')
+                    ->usingField('title'),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
