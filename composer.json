@@ -61,7 +61,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Konnco\\FilamentSafelyDelete\\FilamentImportServiceProvider"
+                "Konnco\\FilamentSafelyDelete\\FilamentSafelyDeleteServiceProvider"
             ]
         }
     }
