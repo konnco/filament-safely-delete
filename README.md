@@ -215,4 +215,14 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Contributors
 
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/frankyso">
+            <img src="https://avatars.githubusercontent.com/u/5705520?v=4" width="100;" alt="frankyso"/>
+            <br />
+            <sub><b>Franky So</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
