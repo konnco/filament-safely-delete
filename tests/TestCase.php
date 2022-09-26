@@ -11,7 +11,6 @@ use Filament\Support\SupportServiceProvider;
 use Filament\Tables\TablesServiceProvider;
 use Konnco\FilamentSafelyDelete\FilamentSafelyDeleteServiceProvider;
 use Livewire\LivewireServiceProvider;
-use Maatwebsite\Excel\ExcelServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -33,7 +32,6 @@ class TestCase extends Orchestra
             SupportServiceProvider::class,
             TablesServiceProvider::class,
             FilamentSafelyDeleteServiceProvider::class,
-            ExcelServiceProvider::class,
         ];
     }
 
