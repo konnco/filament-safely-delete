@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-use Konnco\FilamentSafelyDelete\Pages\Actions\DeleteAction;
+use Konnco\FilamentSafelyDelete\Tables\Actions\DeleteAction;
 use Konnco\FilamentSafelyDelete\Tests\Resources\Models\Post;
 use function Pest\Laravel\assertDatabaseCount;
 
@@ -29,8 +29,6 @@ it('can validate the confirmation name', function () {
     assertDatabaseCount(Post::class, 1);
 });
 
-it('can rollback the confirmation page', function () {
-});
 //it('can delete with bulk actions and should type member current password', function () {
 //});
 

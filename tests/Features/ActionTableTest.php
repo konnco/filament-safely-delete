@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-use Konnco\FilamentSafelyDelete\Tables\Actions\RevertableDeleteAction;
+use Konnco\FilamentSafelyDelete\Tables\Actions\DeleteAction;
 use Konnco\FilamentSafelyDelete\Tests\Resources\Models\Post;
 use function Pest\Laravel\assertDatabaseCount;
 
@@ -10,7 +10,7 @@ it('can delete with confirmation', function () {
     $post->save();
 
     livewire()
-        ->callTableAction(RevertableDeleteAction::class, $post, data: [
+        ->callTableAction(DeleteAction::class, $post, data: [
             'name' => $post->title,
         ])->assertHasNoTableActionErrors();
 
@@ -22,7 +22,7 @@ it('can validate the confirmation name', function () {
     $post->save();
 
     livewire()
-        ->callTableAction(RevertableDeleteAction::class, $post, data: [
+        ->callTableAction(DeleteAction::class, $post, data: [
             'name' => $post->title.Str::random(2),
         ])->assertHasTableActionErrors();
 
