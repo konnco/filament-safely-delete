@@ -2,6 +2,18 @@
 
 All notable changes to `konnco/filament-safely-delete` will be documented in this file.
 
+## 0.2.0 - 2022-09-27
+
+### What's Changed
+
+- Update DeleteAction.php by @ijalnasution in https://github.com/konnco/filament-safely-delete/pull/2
+
+### New Contributors
+
+- @ijalnasution made their first contribution in https://github.com/konnco/filament-safely-delete/pull/2
+
+**Full Changelog**: https://github.com/konnco/filament-safely-delete/compare/0.1.0...0.2.0
+
 ## 0.1.0 - 2022-09-27
 
 ### What's Changed
