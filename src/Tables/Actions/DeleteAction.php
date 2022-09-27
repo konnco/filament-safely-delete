@@ -5,6 +5,7 @@ namespace Konnco\FilamentSafelyDelete\Tables\Actions;
 use Closure;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\App;
 use Konnco\FilamentSafelyDelete\Concerns\HasFieldConfirmation;
 
 class DeleteAction extends \Filament\Tables\Actions\DeleteAction
@@ -14,6 +15,10 @@ class DeleteAction extends \Filament\Tables\Actions\DeleteAction
     protected function setUp(): void
     {
         parent::setUp();
+
+        if (App::environment('testing')) {
+            return;
+        }
 
         $this->form([
             TextInput::make('name')
