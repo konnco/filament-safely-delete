@@ -30,7 +30,7 @@ composer require konnco/filament-safely-delete
 import the actions into the `Resource` page
 
 ```php
-use Konnco\FilamentSafelyDelete\Tables\Actions\DeleteAction;
+use Konnco\FilamentSafelyDelete\Tables\Actions\RevertableDeleteAction;
 
 class PostResource extends Resource
 {
@@ -55,6 +55,47 @@ class PostResource extends Resource
             ]);
     }
 }
+```
+
+### Undo Delete
+You can also use to delete undo in your resource.
+
+```php
+use Konnco\FilamentSafelyDelete\Tables\Actions\RevertableDeleteAction;
+
+class PostResource extends Resource
+{
+    public static function table(Table $table): Table
+    {
+        return $table
+            ->columns([
+                Tables\Columns\TextColumn::make('title'),
+                Tables\Columns\TextColumn::make('slug'),
+                Tables\Columns\TextColumn::make('body'),
+            ])
+            ->filters([
+                //
+            ])
+            ->actions([
+                Tables\Actions\EditAction::make(),
+                RevertableDeleteAction::make()
+            ])
+            ->bulkActions([
+                Tables\Actions\DeleteBulkAction::make(),
+            ]);
+    }
+}
+```
+
+and implementing `HasRevertableRecord` traits in your `ListRecords`
+```php
+use Konnco\FilamentSafelyDelete\Pages\Concerns\HasRevertableRecord;
+
+class ListBlogPosts extends ListRecords
+{
+    use HasRevertableRecord;
+```
+
 
 ## Testing
 

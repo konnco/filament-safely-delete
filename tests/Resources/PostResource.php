@@ -7,7 +7,7 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Konnco\FilamentSafelyDelete\Tables\Actions\DeleteAction;
+use Konnco\FilamentSafelyDelete\Tables\Actions\RevertableDeleteAction;
 use Konnco\FilamentSafelyDelete\Tests\Resources\Models\Post;
 use Konnco\FilamentSafelyDelete\Tests\Resources\Pages\ListPost;
 
@@ -48,8 +48,12 @@ class PostResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-                DeleteAction::make()
+                RevertableDeleteAction::make()
                     ->usingField('title'),
+                RevertableDeleteAction::make('delete-revertable')
+                    ->usingField('title')
+                    ->withoutConfirmation()
+                    ->revertable(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
