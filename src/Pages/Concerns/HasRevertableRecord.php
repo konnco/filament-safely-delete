@@ -9,7 +9,7 @@ trait HasRevertableRecord
     public function initializeHasRevertableRecord()
     {
         $this->listeners = array_merge($this->listeners, [
-            'undoDeleteRecord'
+            'undoDeleteRecord',
         ]);
     }
 

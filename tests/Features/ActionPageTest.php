@@ -23,14 +23,13 @@ it('can validate the confirmation name', function () {
 
     livewire()
         ->callTableAction(DeleteAction::class, $post, data: [
-            'name' => $post->title . Str::random(2),
+            'name' => $post->title.Str::random(2),
         ])->assertHasTableActionErrors();
 
     assertDatabaseCount(Post::class, 1);
 });
 
 it('can rollback the confirmation page', function () {
-
 });
 //it('can delete with bulk actions and should type member current password', function () {
 //});
