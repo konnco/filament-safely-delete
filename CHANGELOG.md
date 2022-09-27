@@ -2,6 +2,10 @@
 
 All notable changes to `konnco/filament-safely-delete` will be documented in this file.
 
+## 0.3.1 - 2022-09-27
+
+**Full Changelog**: https://github.com/konnco/filament-safely-delete/compare/0.3.0...0.3.1
+
 ## 0.3.0 - 2022-09-27
 
 **Full Changelog**: https://github.com/konnco/filament-safely-delete/compare/0.2.0...0.3.0
