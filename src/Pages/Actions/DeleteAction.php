@@ -15,7 +15,7 @@ class DeleteAction extends \Filament\Pages\Actions\DeleteAction
     protected function setUp(): void
     {
         parent::setUp();
-        
+
         if (App::environment('testing')) {
             return;
         }
