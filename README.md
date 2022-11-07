@@ -128,6 +128,13 @@ Please review [our security policy](../../security/policy) on how to report secu
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/thyseus">
+            <img src="https://avatars.githubusercontent.com/u/654271?v=4" width="100;" alt="thyseus"/>
+            <br />
+            <sub><b>Herbert Maschke</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/ijalnasution">
             <img src="https://avatars.githubusercontent.com/u/17308059?v=4" width="100;" alt="ijalnasution"/>
             <br />
