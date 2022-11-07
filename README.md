@@ -117,6 +117,32 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ### Contributors
 
+<table>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/frankyso>
+            <img src=https://avatars.githubusercontent.com/u/5705520?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Franky So/>
+            <br />
+            <sub style="font-size:14px"><b>Franky So</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/thyseus>
+            <img src=https://avatars.githubusercontent.com/u/654271?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Herbert Maschke/>
+            <br />
+            <sub style="font-size:14px"><b>Herbert Maschke</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/ijalnasution>
+            <img src=https://avatars.githubusercontent.com/u/17308059?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=abangijal/>
+            <br />
+            <sub style="font-size:14px"><b>abangijal</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
+
 <!-- readme: contributors -start -->
 <table>
 <tr>
