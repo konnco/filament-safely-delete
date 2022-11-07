@@ -115,7 +115,7 @@ Please see [CONTRIBUTING](https://github.com/konnco/.github/blob/main/CONTRIBUTI
 
 Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
-## Contributors
+### Contributors
 
 <!-- readme: contributors -start -->
 <table>
