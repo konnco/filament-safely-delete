@@ -2,6 +2,22 @@
 
 All notable changes to `konnco/filament-safely-delete` will be documented in this file.
 
+## 0.3.2 - 2023-02-24
+
+### What's Changed
+
+- Skip validation in testing environment by @thyseus in https://github.com/konnco/filament-safely-delete/pull/3
+- Bump dependabot/fetch-metadata from 1.3.3 to 1.3.4 by @dependabot in https://github.com/konnco/filament-safely-delete/pull/4
+- Bump dependabot/fetch-metadata from 1.3.4 to 1.3.5 by @dependabot in https://github.com/konnco/filament-safely-delete/pull/5
+- Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 by @dependabot in https://github.com/konnco/filament-safely-delete/pull/8
+- Allow usage in Laravel 10 by @thyseus in https://github.com/konnco/filament-safely-delete/pull/9
+
+### New Contributors
+
+- @thyseus made their first contribution in https://github.com/konnco/filament-safely-delete/pull/3
+
+**Full Changelog**: https://github.com/konnco/filament-safely-delete/compare/0.3.1...0.3.2
+
 ## 0.3.1 - 2022-09-27
 
 **Full Changelog**: https://github.com/konnco/filament-safely-delete/compare/0.3.0...0.3.1
